@@ -1,0 +1,9 @@
+{
+    "signin": {
+        "title": "Sign In",
+        "subtitle": "Please enter your gmail account",
+        "username": "Username",
+        "password": "Password",
+        "login": "Login"
+    }
+}
