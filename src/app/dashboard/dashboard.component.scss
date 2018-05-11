@@ -1,0 +1,11 @@
+@import "../../assets/sass/colors.scss";
+
+.default-picture{
+    border-radius: 50%;
+    color: $primary-color;
+    background-color: $light-color;
+    text-align: center;
+    width: 32px;
+    display: inline-block;
+    cursor: pointer;
+}

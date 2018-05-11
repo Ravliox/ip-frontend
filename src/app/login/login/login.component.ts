@@ -29,15 +29,19 @@ export class LoginComponent implements OnInit {
 
   signIn() {
     let user = {
-      login: this.loginControl.get("login").value,
-      password: this.loginControl.get("password").value
+      user: this.loginControl.get("login").value,
+      pass: this.loginControl.get("password").value
     }
+
+    console.log(user);
 
     let rez = this.loginService.checkUser(user);
     if (rez === true){
-      this.router.navigate(['app']);
+      this.router.navigate(['dashboard']);
     } else {
-      this.snackBar.open('Incorrect username or password!');
+      this.snackBar.open('Incorrect username or password!', '', {
+        duration: 1500
+      });
     }
   }
 }

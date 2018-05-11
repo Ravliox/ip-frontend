@@ -1,0 +1,21 @@
+<mat-toolbar color = "primary">
+  <mat-toolbar-row fxLayout = "row" fxFlex = "1 1 auto" fxLayoutAlign="space-between center">
+      <h1>Vanjosii</h1>
+      <span fxLayout = "row" fxLayoutGap = "20px">
+        <h2>{{user.name}}</h2> 
+        <img *ngIf = "hasImage" [src] = "user.img">
+        <span *ngIf = "!hasImage" class = "default-picture" [matMenuTriggerFor]="menu">{{initial}}</span>
+        <mat-menu #menu = "matMenu">
+          <button mat-menu-item (click)="logout()">Logout</button>
+          <button mat-menu-item>My profile</button>
+        </mat-menu>
+      </span>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container class = "sidenav">
+  <mat-sidenav mode = "side" opened>Content</mat-sidenav>
+</mat-sidenav-container>
+
+
+<router-outlet></router-outlet>

@@ -6,7 +6,7 @@ import { TranslateModule, TranslateLoader, TranslateService } from '@ngx-transla
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
-import { MatDialogModule, MatSnackBarModule, MatCardModule, MatRadioModule, MatTableModule, MatSelectModule, MatTabsModule, MatNativeDateModule, MatDatepickerModule, MatInputModule, MatFormFieldModule, MatCheckboxModule, MatButtonModule} from '@angular/material';
+import { MatDialogModule, MatSnackBarModule, MatCardModule, MatRadioModule, MatTableModule, MatSelectModule, MatTabsModule, MatNativeDateModule, MatDatepickerModule, MatInputModule, MatFormFieldModule, MatCheckboxModule, MatButtonModule, MatToolbarModule, MatMenuModule, MatSidenavModule} from '@angular/material';
 
 
 
@@ -20,7 +20,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     FlexLayoutModule,
     HttpClientModule,
     AngularFontAwesomeModule,
-    MatDialogModule, MatSnackBarModule, MatCardModule, MatRadioModule, MatTableModule, MatSelectModule, MatTabsModule, MatNativeDateModule, MatDatepickerModule, MatInputModule, MatFormFieldModule, MatCheckboxModule, MatButtonModule,
+    MatDialogModule, MatSnackBarModule, MatCardModule, MatRadioModule, MatTableModule, MatSelectModule, MatTabsModule, MatNativeDateModule, MatDatepickerModule, MatInputModule, MatFormFieldModule, MatCheckboxModule, MatButtonModule, MatToolbarModule, MatMenuModule, MatSidenavModule,
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,
@@ -41,7 +41,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     FormsModule,
     ReactiveFormsModule,
     AngularFontAwesomeModule,
-    MatDialogModule, MatSnackBarModule, MatCardModule, MatRadioModule, MatTableModule, MatSelectModule, MatTabsModule, MatNativeDateModule, MatDatepickerModule, MatInputModule, MatFormFieldModule, MatCheckboxModule, MatButtonModule
+    MatDialogModule, MatSnackBarModule, MatCardModule, MatRadioModule, MatTableModule, MatSelectModule, MatTabsModule, MatNativeDateModule, MatDatepickerModule, MatInputModule, MatFormFieldModule, MatCheckboxModule, MatButtonModule, MatToolbarModule, MatMenuModule, MatSidenavModule
 
   ]
 })

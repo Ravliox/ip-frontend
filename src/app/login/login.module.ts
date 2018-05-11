@@ -20,7 +20,6 @@ import { LoginService } from './login.service';
       }
     })
   ],
-  declarations: [LoginComponent],
-  providers: [LoginService]
+  declarations: [LoginComponent]
 })
 export class LoginModule { }
